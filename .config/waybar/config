@@ -1,0 +1,90 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 6,
+  "modules-left": [
+    "sway/workspaces",
+    "sway/scratchpad"
+  ],
+  "modules-center": [
+    "sway/window"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "sway/language",
+    "custom/weather",
+    "clock",
+    "custom/power"
+  ],
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}: {icon}",
+    "format-active": "{name}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+  },
+  "sway/scratchpad": {
+    "format": "{icon} {count}",
+    "format-icons": [
+      "",
+      "  "
+    ],
+    "show-empty": false,
+    "tooltip": true,
+    "tooltip-format": "{app}: {title}"
+  },
+  "sway/window": {
+    "max-length": 50
+  },
+  "network": {
+    "format-ethernet": "󰤨",
+    "format-disconnected": "󰤭",
+    "tooltip-format": "{ipaddr}"
+  },
+  "tray": {
+    "spacing": 16
+  },
+  "clock": {
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "format": "{:%H:%M}"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        "󰕾"
+      ]
+    },
+    "tooltip-format": "{volume}% volume",
+    "on-click": "pavucontrol"
+  },
+  "sway/language": {
+    "format": "{flag}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+  },
+  "custom/weather": {
+    "exec": "curl -s https://wttr.in/?format=1",
+    "format": "{}",
+    "interval": 600
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "/home/martin/.local/bin/powermenu"
+  }
+}
