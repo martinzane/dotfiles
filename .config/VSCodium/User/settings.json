@@ -1,35 +1,30 @@
 {
-  // Layout
   "window.zoomLevel": 2,
   "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.statusBar.visible": false,
   "window.titleBarStyle": "custom",
-  "window.title": " ", // ${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}
+  "window.title": " ", 
   "workbench.activityBar.location": "hidden",
   "keyboard.dispatch": "keyCode",
 
-  // Font
   "editor.fontFamily": "Maple Mono NF",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
 
-  // Theme
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Mocha",
   "window.autoDetectColorScheme": true,
 
-  // Formatting & saving
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
 
-  // Extensions
   "markdown.extension.list.indentationSize": "inherit",
 
   "extensions.experimental.affinity": {
@@ -37,9 +32,10 @@
   },
   "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim/bin/nvim",
 
-  // File types
   "[markdown]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": null
-  }
+  },
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false
 }
