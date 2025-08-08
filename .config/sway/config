@@ -159,8 +159,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# Screenshot
-bindsym Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H%M%S.png)
+# Screenshot - save to clipboard and a file
+bindsym Print exec grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H%M%S.png) | wl-copy -t image/png
 
 ### Status Bar:
 
