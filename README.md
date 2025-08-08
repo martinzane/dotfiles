@@ -2,6 +2,8 @@
 
 ## Software Overview
 
+The complete list of software and packages can be found in [docs/software.md](docs/software.md).
+
 | Component | Software |
 | -------- | ------- |
 | Operating system | [Debian](https://www.debian.org/) |
@@ -61,7 +63,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 
 ### 9. Install LF
 - Install [Go](https://go.dev/doc/install) and [LF](https://github.com/gokcehan/lf/wiki/Tutorial).
-- Run: `sudo apt install bat eza chafa`
+- Run: `sudo apt install bat eza`
 - Set up a `bat -> batcat` symlink with `ln -s /usr/bin/batcat $HOME/.local/bin/bat`.
 - Add `mimeapps.list` to `$XDG_CONFIG_HOME`.
 
