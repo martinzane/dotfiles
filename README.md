@@ -2,7 +2,7 @@
 
 ## Software Overview
 
-| Component | Software|
+| Component | Software |
 | -------- | ------- |
 | Operating system | [Debian](https://www.debian.org/) |
 | Window manager | [Sway](https://swaywm.org/) |
@@ -23,6 +23,8 @@
 - Bare-bone [Debian](https://www.debian.org/) installation with standard system utilities only
 
 ## Installation
+
+You can copy over the `.config` and `.local` folders from this repository or configure everything yourself.
 
 ### 1. Install Utilities
 - Run: `sudo apt install curl unzip git software-properties-common wev`
@@ -60,7 +62,6 @@
 ### 9. Install LF
 - Install [Go](https://go.dev/doc/install) and [LF](https://github.com/gokcehan/lf/wiki/Tutorial).
 - Run: `sudo apt install bat eza chafa`
-- Configure `bat` in `$XDG_CONFIG_HOME/bat`.
 - Set up a `bat -> batcat` symlink with `ln -s /usr/bin/batcat $HOME/.local/bin/bat`.
 - Add `mimeapps.list` to `$XDG_CONFIG_HOME`.
 
