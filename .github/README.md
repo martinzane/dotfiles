@@ -6,13 +6,13 @@ These are my dotfiles.
 
 You can copy any scripts you like, but I suggest picking individual pieces rather than using the whole setup. 
 
-An installation script is planned for the future, but for now, you can follow the [manual installation guide](../docs/software.md).
+An installation script is planned for the future, but for now, you can follow the [manual installation guide](/docs/installation.md).
 
 ## Software Overview
 
 This is a quick overview of the main software used in this rice.
 
-The complete list can be found [docs/software.md](docs/software.md).
+The complete list can be found [docs/software.md](/docs/software.md).
 
 | Component | Software |
 | -------- | ------- |
