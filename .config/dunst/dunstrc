@@ -37,7 +37,7 @@
     icon_position = left
     min_icon_size = 50
     max_icon_size = 60
-    # icon_path = $HOME/.local/share/icons/dunst
+    # icon_path = $XDG_DATA_HOME/icons/dunst
     sticky_history = yes
     history_length = 20
     always_run_script = true

@@ -7,18 +7,18 @@ fi
 [[ -r ${ZDOTDIR:-$HOME}/.zaliases ]] && source ${ZDOTDIR:-$HOME}/.zaliases
 
 # Plugins
-source $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-source $HOME/.config/zsh/plugins/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $XDG_CONFIG_HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme
+source $XDG_CONFIG_HOME/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source $XDG_CONFIG_HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATH
 export GOPATH=$HOME/go
-export PATH=$PATH:/home/martin/.local/bin:/usr/local/go/bin:$GOPATH/bin:/usr/libexec/imv:/opt/nvim/bin
+export PATH=$PATH:/$HOME/.local/bin:/usr/local/go/bin:$GOPATH/bin:/usr/libexec/imv:/opt/nvim/bin
 
 # History
 export HISTSIZE=100000
 export SAVEHIST=20000
-export HISTFILE="$HOME/.cache/zsh/history"
+export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 setopt hist_ignore_dups     # do not record an event that was just recorded again
 setopt hist_ignore_all_dups # delete an old recorded event if a new event is a duplicate
 setopt hist_ignore_space    # do not record an event starting with a space
@@ -46,4 +46,4 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 # P10K config
-[[ ! -f $HOME/.config/zsh/.p10k.zsh ]] || source $HOME/.config/zsh/.p10k.zsh
+[[ ! -f $XDG_CONFIG_HOME/zsh/.p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/.p10k.zsh

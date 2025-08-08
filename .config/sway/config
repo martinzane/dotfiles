@@ -29,17 +29,15 @@ include /etc/sway/config-vars.d/*
 
 ### Output configuration
 
-output * bg ~/Pictures/evening-sky.png fill 
+output * bg $HOME/Pictures/evening-sky.png fill 
 output DP-1 mode 1920x1080@144Hz pos 0,0 
 
 ### Input configuration
 
-# input "1189:32769:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 input "type:pointer" {
   accel_profile flat
 } 
 
-# input "13364:2401:Keychron_Keychron_V6_Max" {
 input "type:keyboard" {
   xkb_layout se,bg(phonetic)
   xkb_options grp:win_space_toggle,caps:swapescape
@@ -89,8 +87,6 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Workspaces:
-
 # Switch to workspace
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -136,8 +132,6 @@ bindsym $mod+space focus mode_toggle
 # Move focus to the parent container
 bindsym $mod+a focus parent
 
-# Scratchpad:
-
 # Move focused window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
 
@@ -160,7 +154,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Screenshot - save to clipboard and a file
-bindsym Print exec grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H%M%S.png) | wl-copy -t image/png
+bindsym Print exec grim -g "$(slurp)" - | tee $HOME/Pictures/Screenshots/$(date +%Y-%m-%d-%H%M%S.png) | wl-copy -t image/png
 
 ### Status Bar:
 
@@ -173,10 +167,10 @@ default_border none
 
 # Sway Idle
 exec swayidle -w \
-	timeout 600 'swaylock -f -C ~/.config/swaylock/config' \
+	timeout 600 'swaylock -f -C $XDG_CONFIG_HOME/swaylock/config' \
 	timeout 1200 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"' \
-	before-sleep 'swaylock -f -C ~/.config/swaylock/config'
+	before-sleep 'swaylock -f -C $XDG_CONFIG_HOME/swaylock/config'
 
 include /etc/sway/config.d/*
 
