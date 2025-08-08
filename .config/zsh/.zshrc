@@ -7,9 +7,9 @@ fi
 [[ -r ${ZDOTDIR:-$HOME}/.zaliases ]] && source ${ZDOTDIR:-$HOME}/.zaliases
 
 # Plugins
-source $XDG_CONFIG_HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme
-source $XDG_CONFIG_HOME/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source $XDG_CONFIG_HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $XDG_CONFIG_HOME/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+source $XDG_CONFIG_HOME/zsh/plugins/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source $XDG_CONFIG_HOME/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATH
 export GOPATH=$HOME/go
