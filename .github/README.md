@@ -29,3 +29,5 @@ The complete list can be found [docs/software.md](/docs/software.md).
 | Audio player | [mpc](https://github.com/ncmpcpp/ncmpcpp) |
 | Video player | [mpv](https://mpv.io/) |
 | Browser | [Brave](https://brave.com/) |
+| Text Editor | [VSCodium](https://vscodium.com/) |
+| Color scheme | [Catppuccin](https://catppuccin.com/) |

@@ -20,6 +20,7 @@
 | **mpd**                       | Music Player Daemon, a flexible audio server.                               |
 | **mpc**                       | Command-line client for MPD to control music playback.                     |
 | **mpv**                       | A versatile media player supporting many video and audio formats.           |
+| **newsboat**                  | A terminal-based RSS reader for managing and reading news feeds.           |
 | **pulseaudio**                | Sound server for managing audio devices and streams.                        |
 | **pavucontrol**               | GUI for controlling PulseAudio sound settings.                              |
 | **slurp**                     | Wayland tool for selecting screen regions, often used with grim.            |

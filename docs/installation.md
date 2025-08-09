@@ -35,6 +35,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Run: `sudo apt install zsh`
 - Set environment variables in `$HOME/.zshenv` and configure in `$XDG_CONFIG_HOME/zsh`.
 - Set Zsh as default shell with `chsh -s $(which zsh)`.
+- Add plugins to `$XDG_CONFIG_HOME/zsh/plugins` and include them in `.zshrc`
 
 ### 8. Install Tofi
 - Install [Tofi](https://github.com/philj56/tofi).
@@ -70,7 +71,12 @@ You can copy over the `.config` and `.local` folders from this repository or con
 ### 14. Install grim & slurp
 - Run `sudo apt install grim slurp wl-clipboard`
 
-### 13: Install VSCodium
+### 15. Install newsboat
+- Run `sudo apt install newsboat`
+- Configure in `$XDG_CONFIG_HOME/newsboat`
+- Add RSS feed links to `$XDG_CONFIG_HOME/newsboat/urls`
+
+### 16. Install VSCodium
 - Install [VSCodium](https://github.com/VSCodium/vscodium/releases)
 - Configure in `.config/VSCodium/User/settings.json`
 - Add extension script in `.local/bin`
