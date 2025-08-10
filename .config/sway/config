@@ -29,7 +29,7 @@ include /etc/sway/config-vars.d/*
 
 ### Output configuration
 
-output * bg $HOME/Pictures/evening-sky.png fill 
+output * bg $HOME/media/pictures/wallpapers/evening-sky.png fill 
 output DP-1 mode 1920x1080@144Hz pos 0,0 
 
 ### Input configuration
@@ -154,7 +154,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Screenshot - save to clipboard and a file
-bindsym Print exec grim -g "$(slurp)" - | tee $HOME/Pictures/Screenshots/$(date +%Y-%m-%d-%H%M%S.png) | wl-copy -t image/png
+bindsym Print exec grim -g "$(slurp)" - | tee $HOME/media/pictures/screenshots/$(date +%Y-%m-%d-%H%M%S.png) | wl-copy -t image/png
 
 ### Status Bar:
 

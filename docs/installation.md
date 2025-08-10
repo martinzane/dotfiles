@@ -16,7 +16,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 
 ### 3. Install Fonts
 - Run: `sudo apt install fonts-cantarell fonts-font-awesome fonts-fork-awesome fonts-noto-color-emoji`
-- Download [Maple Mono Nerd Font](https://github.com/subframe7536/maple-font/releases) (TTF Ligature) and unzip fonts to `$HOME/.fonts`.
+- Download [Maple Mono Nerd Font](https://github.com/subframe7536/maple-font/releases) (TTF Ligature) and unzip fonts to `$XDG_DATA_HOME/fonts`.
 
 ### 4. Install Sway
 - Run: `sudo apt install sway xwayland`
@@ -74,6 +74,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 ### 15. Install newsboat
 - Run `sudo apt install newsboat`
 - Configure in `$XDG_CONFIG_HOME/newsboat`
+- Create the `$XDG_DATA_HOME/newsboat` directory.
 - Add RSS feed links to `$XDG_CONFIG_HOME/newsboat/urls`
 
 ### 16. Install VSCodium
