@@ -55,7 +55,7 @@
     "tooltip-format": "{ipaddr}"
   },
   "tray": {
-    "spacing": 16
+    "spacing": 12
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",

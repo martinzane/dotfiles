@@ -84,6 +84,11 @@ button {
     margin: 5px 0;
 }
 
+#pulseaudio {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
 #window,
 #workspaces,
 #language,
