@@ -5,28 +5,54 @@ set icons true
 set sixel true
 set rulerfmt "%d  |%a  |%p  |\033[7;31m %m \033[0m  |\033[7;33m %c \033[0m  |\033[7;35m %s \033[0m  |\033[7;34m %f \033[0m  |%i/%t"
 
-### Custom functions
+# Bindings
 
-# Make directory
+## Unbind
+map c
+map d
+map m
+
+## Basics
+map . set hidden!
+map p paste
+map x cut
+map y copy
+map <enter> open
+map R reload
+map mf mkfile
+map md mkdir
+map C clear
+
+## Shortcuts 
+map gc cd ~/.config
+map gs cd ~/.local/bin
+map gd cd ~/documents
+map gD cd ~/downloads
+map gm cd ~/media
+map gp cd ~/projects
+map gv cd ~/volumes
+
+## Misc
+map co $codium "$f"
+map au unarchive
+
+# Custom functions
+
+## Make directory
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
   mkdir $ans
 }}
 
-# Make file
+## Make file
 cmd mkfile ${{
   printf "File Name: "
   read ans
   $EDITOR $ans
 }}
 
-# Set wallpaper
-cmd setwallpaper ${{
-    setwallpaper "$f"
-}}
-
-# Unarchive
+## Unarchive
 cmd unarchive ${{
   case "$f" in
       *.zip) unzip "$f" ;;
@@ -39,7 +65,7 @@ cmd unarchive ${{
   esac
 }}
 
-# Open
+## Open
 cmd open &{{
 	case $(file --mime-type -Lb $f) in
 		text/*) lf -remote "send $id \$vi \$fx";;
@@ -47,64 +73,8 @@ cmd open &{{
 	esac
 }}
 
+## Select
 cmd on-select &{{
     lf -remote "send $id set statfmt \"$(exa -ld --color=always "$f")\""
 }}
 
-cmd fzf_jump ${{
-    res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
-    if [ -n "$res" ]; then
-        if [ -d "$res" ]; then
-            cmd="cd"
-        else
-            cmd="select"
-        fi
-        res="$(printf '%s' "$res" | sed 's/\\/\\\\/g;s/"/\\"/g')"
-        lf -remote "send $id $cmd \"$res\""
-    fi
-}}
-map <c-f> :fzf_jump
-
-cmd fzf_search ${{
-    RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
-    res="$(
-        FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
-            fzf --bind "change:reload:$RG_PREFIX {q} || true" \
-            --ansi --layout=reverse --header 'Search in files' \
-            | cut -d':' -f1 | sed 's/\\/\\\\/g;s/"/\\"/g'
-    )"
-    [ -n "$res" ] && lf -remote "send $id select \"$res\""
-}}
-map <c-g> :fzf_search
-
-### Bindings
-map c
-map d
-map m
-
-map co $vscodium "$f"
-map cf $dotbare fadd -f
-
-map au unarchive
-map ae $wine "$f"
-
-# Basic Functions
-map . set hidden!
-map p paste
-map x cut
-map y copy
-map <enter> open
-map R reload
-map mf mkfile
-map md mkdir
-map bg setwallpaper
-map C clear
-
-# Movement
-map gc cd $XDG_CONFIG_HOME
-map gD cd $HOME/Documents
-map gd cd $HOME/Downloads
-map gp cd $HOME/Pictures
-map gr cd $HOME/Development
-map gv cd $HOME/Videos
-map gs cd $HOME/.local/bin
