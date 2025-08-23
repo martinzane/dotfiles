@@ -56,9 +56,10 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Run: `sudo apt install mpv`
 - Configure in `$XDG_CONFIG_HOME/mpv`.
 
-### 12. Install mpd
-- Run: `sudo apt install mpd mpc`
-- Configure in `$XDG_CONFIG_HOME/mpd`.
+### 12. Install mpd & ncmpcpp
+- Run: `sudo apt install mpd ncmpcpp`
+- Configure mpd in `$XDG_CONFIG_HOME/mpd`.
+- Configure ncmpcpp in `#XDG_CONFIG_HOME/ncmpcpp`
 - Disable system service: `sudo systemctl disable --now mpd`
 - Enable and start user service:  
   `systemctl --user enable mpd`  
