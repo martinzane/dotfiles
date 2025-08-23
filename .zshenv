@@ -19,9 +19,6 @@ export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 # Colors
 export BAT_THEME="Catppuccin Mocha"
 
-# Localization
-export LC_ALL=en_US.UTF-8
-
 # LF Icons
 export LF_ICONS="\
 tw=:\
