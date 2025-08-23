@@ -2,10 +2,9 @@
 
 <img src="./images/desktop.png" width="100%" />
 
+These are my dotfiles for Debian.
 
-These are my dotfiles.
-
-Scripts can be copied individually, though it's recommended to select specific pieces rather than using the entire setup.
+This is a minimalist, terminal-driven setup, focused on speed and efficiency.
 
 An installation script is planned for the future. In the meantime, the [manual installation guide](/docs/installation.md) is available.
 
