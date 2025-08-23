@@ -25,7 +25,8 @@ map C clear
 
 ## Shortcuts 
 map gc cd ~/.config
-map gs cd ~/.local/bin
+map gb cd ~/.local/bin
+map gs cd ~/.local/share
 map gd cd ~/documents
 map gD cd ~/downloads
 map gm cd ~/media
