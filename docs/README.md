@@ -12,7 +12,7 @@ An installation script is planned for the future. In the meantime, the [manual i
 
 This is a quick overview of the main software used in this setup.
 
-The complete list can be found [docs/software.md](/docs/software.md).
+The complete list can be found in [docs/software.md](/docs/software.md).
 
 | Component | Software |
 | -------- | ------- |
