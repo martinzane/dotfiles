@@ -17,7 +17,7 @@ export LESSHISTFILE="-"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
 # Colors
-export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="catppuccin-mocha"
 
 # LF Icons
 export LF_ICONS="\
