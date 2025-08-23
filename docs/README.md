@@ -2,15 +2,16 @@
 
 <img src="./images/desktop.png" width="100%" />
 
-These are my dotfiles. 
 
-You can copy any scripts you like, but I suggest picking individual pieces rather than using the whole setup. 
+These are my dotfiles.
 
-An installation script is planned for the future, but for now, you can follow the [manual installation guide](/docs/installation.md).
+Scripts can be copied individually, though it's recommended to select specific pieces rather than using the entire setup.
+
+An installation script is planned for the future. In the meantime, the [manual installation guide](/docs/installation.md) is available.
 
 ## Software Overview
 
-This is a quick overview of the main software used in this rice.
+This is a quick overview of the main software used in this setup.
 
 The complete list can be found [docs/software.md](/docs/software.md).
 
@@ -26,7 +27,7 @@ The complete list can be found [docs/software.md](/docs/software.md).
 | Launcher | [Tofi](https://github.com/philj56/tofi) |
 | File manager | [lf](https://github.com/gokcehan/lf) |
 | Image viewer | [imv](https://sr.ht/~exec64/imv/) |
-| Audio player | [mpc](https://github.com/ncmpcpp/ncmpcpp) |
+| Audio player | [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) |
 | Video player | [mpv](https://mpv.io/) |
 | Browser | [Brave](https://brave.com/) |
 | Text Editor | [VSCodium](https://vscodium.com/) |
