@@ -20,10 +20,11 @@
 | **mpd**                       | Music Player Daemon, a flexible audio server.                               |
 | **mpc**                       | Command-line client for MPD to control music playback.                      |
 | **mpv**                       | A versatile media player supporting many video and audio formats.           |
-| **ncmpcpp**                   | Command-line client for MPD with advanced music playback controls.      |
+| **ncmpcpp**                   | Command-line client for MPD with advanced music playback controls.          |
 | **newsboat**                  | A terminal-based RSS reader for managing and reading news feeds.            |
 | **pulseaudio**                | Sound server for managing audio devices and streams.                        |
 | **pavucontrol**               | GUI for controlling PulseAudio sound settings.                              |
+| **sc-im**                     | An ncurses spreadsheet program for the terminal.                            |
 | **slurp**                     | Wayland tool for selecting screen regions, often used with grim.            |
 | **software-properties-common**| Provides an abstraction of software sources and repositories.               |
 | **sway**                      | A Wayland compositor designed for tiling window management.                 |

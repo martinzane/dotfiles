@@ -83,3 +83,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Configure in `.config/VSCodium/User/settings.json`
 - Add extension script in `.local/bin`
 - Run `vscodium-extensions.sh` script
+
+### 16. Install sc-im 
+- Install [sc-im](https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian)
+- Configure in `.config/sc-im/scimrc`
