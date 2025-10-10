@@ -39,6 +39,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Set environment variables in `$HOME/.zshenv` and configure in `$XDG_CONFIG_HOME/zsh`.
 - Set Zsh as default shell with `chsh -s $(which zsh)`.
 - Add plugins to `$XDG_CONFIG_HOME/zsh/plugins` and include them in `.zshrc`
+- Reboot for changes to take effect.
 
 ### 9. Install Tofi
 - Run: `sudo apt install tofi`
