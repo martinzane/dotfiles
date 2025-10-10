@@ -49,7 +49,6 @@ You can copy over the `.config` and `.local` folders from this repository or con
 ### 10. Install LF
 - Install [Go](https://go.dev/doc/install) and [LF](https://github.com/gokcehan/lf/wiki/Tutorial).
 - Run: `sudo apt install bat eza`
-- Set up a `bat -> batcat` symlink with `ln -s /usr/bin/batcat $HOME/.local/bin/bat`.
 - Add `mimeapps.list` to `$XDG_CONFIG_HOME`.
 
 ### 11. Install imv
