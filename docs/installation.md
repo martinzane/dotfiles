@@ -11,16 +11,16 @@ You can copy over the `.config` and `.local` folders from this repository or con
 ### 1. Install Utilities
 - Run: `sudo apt install curl unzip git wev`
 
-### 2. Install Brave
-- Run: `curl -fsS https://dl.brave.com/install.sh | sh`
-
-### 3. Install Fonts
-- Run: `sudo apt install fonts-cantarell fonts-font-awesome fonts-fork-awesome fonts-noto-color-emoji`
-- Download [Maple Mono Nerd Font](https://github.com/subframe7536/maple-font/releases) (TTF Ligature) and unzip fonts to `$XDG_DATA_HOME/fonts`.
-
-### 4. Install Sway
+### 2. Install Sway
 - Run: `sudo apt install sway xwayland`
 - Configure in `$XDG_CONFIG_HOME/sway`.
+
+### 3. Install Brave
+- Run: `curl -fsS https://dl.brave.com/install.sh | sh`
+
+### 4. Install Fonts
+- Run: `sudo apt install fonts-cantarell fonts-font-awesome fonts-fork-awesome fonts-noto-color-emoji`
+- Download [Maple Mono Nerd Font](https://github.com/subframe7536/maple-font/releases) (TTF Ligature) and unzip fonts to `$XDG_DATA_HOME/fonts`.
 
 ### 5. Install Waybar
 - Run: `sudo apt install waybar pulseaudio pavucontrol swaylock swayidle`
