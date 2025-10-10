@@ -9,7 +9,7 @@
 You can copy over the `.config` and `.local` folders from this repository or configure everything yourself.
 
 ### 1. Install Utilities
-- Run: `sudo apt install curl unzip git software-properties-common wev`
+- Run: `sudo apt install curl unzip git wev`
 
 ### 2. Install Brave
 - Run: `curl -fsS https://dl.brave.com/install.sh | sh`
