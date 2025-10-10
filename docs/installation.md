@@ -9,7 +9,7 @@
 You can copy over the `.config` and `.local` folders from this repository or configure everything yourself.
 
 ### 1. Install Utilities
-- Run: `sudo apt install curl unzip git wev`
+- Run: `sudo apt install curl unzip git wev gnupg`
 
 ### 2. Clone dotfiles 
 - Run: `git clone https://github.com/martinzane/dotfiles.git`
