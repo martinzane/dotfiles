@@ -11,6 +11,7 @@
 | **fonts-fork-awesome**        | A fork of Font Awesome providing additional icons.                          |
 | **fonts-noto-color-emoji**    | Font for displaying color emojis.                                           |
 | **Go**                        | Programming language for building fast, scalable applications.              |
+| **gnupg**                     | An open-source tool for encrypting and signing data                         |
 | **grim**                      | Tool for taking screenshots in Wayland.                                     |
 | **git**                       | Version control system to manage source code changes.                       |
 | **imv**                       | Simple image viewer for Wayland.                                            |
