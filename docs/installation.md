@@ -41,7 +41,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Add plugins to `$XDG_CONFIG_HOME/zsh/plugins` and include them in `.zshrc`
 
 ### 9. Install Tofi
-- Install [Tofi](https://github.com/philj56/tofi).
+- Run: `sudo apt install tofi`
 - Configure in `$XDG_CONFIG_HOME/tofi`.
 - Add powermenu script to `$HOME/.local/bin`.
 
