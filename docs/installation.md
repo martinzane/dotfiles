@@ -85,7 +85,7 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Install [VSCodium](https://github.com/VSCodium/vscodium/releases)
 - Configure in `.config/VSCodium/User/settings.json`
 - Add extension script in `.local/bin`
-- Run `vscodium-extensions.sh` script
+- Run `install-codium-extensions.sh` script
 
 ### 17. Install gnumeric
 - Run `sudo apt install gnumeric`
