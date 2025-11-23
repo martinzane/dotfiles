@@ -4,6 +4,43 @@
 
 - Bare-bone [Debian](https://www.debian.org/) installation with standard system utilities only
 
+## Quick installation
+
+This quick installation guide assumes you're copying the configuration files from this repository.
+
+### 1. Install configuration files
+- `sudo apt install git`
+- `mkdir ~/downloads`
+- `cd ~/downloads`
+- `git clone https://github.com/martinzane/dotfiles.git`
+- `cd dotfiles`
+- `cp -r .config .local .zshenv ~`
+
+### 2. Install packages
+```sh
+sudo apt install curl unzip wev gnupg sway xwayland fonts-cantarell fonts-font-awesome fonts-fork-awesome fonts-noto-color-emoji waybar pulseaudio pavucontrol swaylock swayidle zsh tofi bat eza imv mpv mpd ncmpcpp dunst libnotify-bin grim slurp wl-clipboard newsboat gnumeric
+```
+
+### 3. Install Brave
+- Run: `curl -fsS https://dl.brave.com/install.sh | sh`
+
+### 4. Set zsh as default shell
+- Run: `chsh -s $(which zsh)`.
+
+
+### 5. Set up mpd
+- Disable system service: `sudo systemctl disable --now mpd`
+- Enable and start user service:
+  `systemctl --user enable mpd`
+  `systemctl --user start mpd`
+
+### 5. Install LF
+- Install [Go](https://go.dev/doc/install) and [LF](https://github.com/gokcehan/lf/wiki/Tutorial).
+
+### 6. Install VSCodium
+- Install [VSCodium](https://github.com/VSCodium/vscodium/releases)
+- Run `install-codium-extensions.sh` script
+
 ## Installation
 
 You can copy over the `.config` and `.local` folders from this repository or configure everything yourself.
