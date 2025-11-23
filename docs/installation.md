@@ -87,6 +87,5 @@ You can copy over the `.config` and `.local` folders from this repository or con
 - Add extension script in `.local/bin`
 - Run `vscodium-extensions.sh` script
 
-### 17. Install sc-im 
-- Install [sc-im](https://github.com/andmarti1424/sc-im/wiki/Installing-on-Debian)
-- Configure in `.config/sc-im/scimrc`
+### 17. Install gnumeric
+- Run `sudo apt install gnumeric`

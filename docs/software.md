@@ -11,6 +11,7 @@
 | **fonts-fork-awesome**        | A fork of Font Awesome providing additional icons.                          |
 | **fonts-noto-color-emoji**    | Font for displaying color emojis.                                           |
 | **Go**                        | Programming language for building fast, scalable applications.              |
+| **gnumeric**                  | A lightweight, open-source spreadsheet app for Linux.                       |
 | **gnupg**                     | An open-source tool for encrypting and signing data                         |
 | **grim**                      | Tool for taking screenshots in Wayland.                                     |
 | **git**                       | Version control system to manage source code changes.                       |
@@ -25,7 +26,6 @@
 | **newsboat**                  | A terminal-based RSS reader for managing and reading news feeds.            |
 | **pulseaudio**                | Sound server for managing audio devices and streams.                        |
 | **pavucontrol**               | GUI for controlling PulseAudio sound settings.                              |
-| **sc-im**                     | An ncurses spreadsheet program for the terminal.                            |
 | **slurp**                     | Wayland tool for selecting screen regions, often used with grim.            |
 | **software-properties-common**| Provides an abstraction of software sources and repositories.               |
 | **sway**                      | A Wayland compositor designed for tiling window management.                 |
