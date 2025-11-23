@@ -2,13 +2,13 @@
 
 # Power menu script using tofi
 
-CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown\nLog Out" | tofi --config "$HOME"/.config/tofi/powermenu-config)
+CHOSEN=$(printf "Lock\nSuspend\nReboot\nPower off\nLog out" | tofi --config "$HOME"/.config/tofi/powermenu-config)
 
 case "$CHOSEN" in
 	"Lock") swaylock;;
 	"Suspend") systemctl suspend-then-hibernate ;;
 	"Reboot") systemctl reboot;;
-	"Shutdown") systemctl poweroff ;;
-	"Log Out") logout;;
+	"Power off") systemctl poweroff ;;
+	"Log out") logout;;
 	*) exit 1 ;;
 esac
